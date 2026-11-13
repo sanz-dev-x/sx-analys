@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gp_root"
+    android:background="@drawable/widget_glass_clip"
+    android:clipToOutline="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.Widget.Sxanalys">
+
+    <ImageView
+        android:id="@+id/gp_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/widget_glass_fallback" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="10dp"
+        android:paddingEnd="12dp">
+
+        <ImageView
+            android:id="@+id/gp_art"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:contentDescription="@string/album_art"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/gp_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/no_song_playing"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/gp_artist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/tap_to_open"
+                android:textColor="#B3FFFFFF"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/gp_prev"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:contentDescription="@string/previous"
+            android:padding="4dp"
+            android:src="@drawable/ic_widget_skip_previous" />
+
+        <ImageView
+            android:id="@+id/gp_play"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:contentDescription="@string/play_pause"
+            android:padding="4dp"
+            android:src="@drawable/ic_widget_play" />
+
+        <ImageView
+            android:id="@+id/gp_next"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:contentDescription="@string/next"
+            android:padding="4dp"
+            android:src="@drawable/ic_widget_skip_next" />
+    </LinearLayout>
+</FrameLayout>
