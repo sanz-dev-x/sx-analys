@@ -1,0 +1,13 @@
+HSPLcom/sxanalys/music/**;->**(**)**
+Lcom/sxanalys/music/**;
+HSPLandroidx/compose/**;->**(**)**
+Landroidx/compose/**;
+HSPLandroidx/lifecycle/**;->**(**)**
+Landroidx/lifecycle/**;
+HSPLandroidx/navigation/**;->**(**)**
+Landroidx/navigation/**;
+HSPLandroidx/datastore/**;->**(**)**
+HSPLandroidx/room/**;->**(**)**
+HSPLcoil3/**;->**(**)**
+Lcoil3/**;
+HSPLkotlinx/coroutines/**;->**(**)**
